@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextDegisecek"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Bekliyor"
+        android:visibility="invisible"/>
+    <EditText
+        android:id="@+id/editTextGelecek"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:hint="Medicine Name" />
+
+    <Button
+        android:id="@+id/alismi"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Bilgileri Getir" />
+
+    <TextView
+        android:id="@+id/bilgi"
+        android:layout_width="match_parent"
+        android:layout_height="225dp" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp">
+
+
+        <ImageButton
+            android:id="@+id/im2"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:src="@drawable/ferrum"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/im1"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:src="@drawable/arveles2"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/im3"
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+            android:src="@drawable/delix"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/im4"
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:src="@drawable/bactrim"
+            android:visibility="invisible" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:hint="Write Your Username" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Medicine"
+            android:visibility="invisible"
+            android:textAllCaps="false" />
+
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:visibility="invisible"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnMedicinePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MedicinePage"
+            android:visibility="invisible"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

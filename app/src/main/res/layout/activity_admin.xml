@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin">
+
+
+    <ImageView
+        android:id="@+id/logoadmin"
+        android:layout_width="139dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/adminname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Admin Name"
+        app:layout_constraintBottom_toTopOf="@+id/adminpass"
+        app:layout_constraintTop_toBottomOf="@+id/logoadmin"
+        app:layout_constraintVertical_bias="0.587"
+        tools:layout_editor_absoluteX="0dp"
+        android:focusableInTouchMode="true"
+        android:inputType="textPersonName"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/adminpass"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_marginBottom="76dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnadmin"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnadmin"
+        android:layout_width="245dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/custom_button2"
+        android:text="Login as Admin"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnmain"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/custom_button2"
+        android:text="Main Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadmin"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
